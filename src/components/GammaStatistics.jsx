@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./styles.css";
 function GammaStatistics({ dataset }) {
   const calculateGamma = (dataPoint) => {
     return (dataPoint.Ash * dataPoint.Hue) / dataPoint.Magnesium;
@@ -68,8 +68,8 @@ function GammaStatistics({ dataset }) {
   });
 
   return (
-    <div>
-      <table>
+    <div className="table-container">
+      <table className="styled-table">
         <thead>
           <tr>
             <th>Measure</th>

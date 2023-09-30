@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./styles.css";
 const FlavanoidsStatistics = () => {
   const [dataset, setDataset] = useState([]);
 
@@ -38,7 +38,7 @@ const FlavanoidsStatistics = () => {
   };
 
   const calculateStatistics = (data) => {
-   // console.log("checking data", data);
+    // console.log("checking data", data);
     const classes = [...new Set(data.map((item) => item.Alcohol))];
     //console.log("Classes:", classes); // Debug output
 
@@ -78,8 +78,8 @@ const FlavanoidsStatistics = () => {
   const classes = Object.keys(statistics);
 
   return (
-    <div>
-      <table>
+    <div className="table-container">
+      <table className="styled-table">
         <thead>
           <tr>
             <th>Measure</th>
