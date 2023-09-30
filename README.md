@@ -1,6 +1,9 @@
 
+![image](https://github.com/vaishnavwalke/Manufac_test/assets/84281792/5e2bb012-33bb-4bbd-90d1-ae6297b1f7fc)
 
+use commmand - yarn start
 
+codesandbox link - https://codesandbox.io/p/github/vaishnavwalke/Manufac_test/main?workspaceId=6f43939a-f127-417c-be01-5909dbe6c2bf
 
 **FlavanoidsStatistics. Its main purpose is to load a dataset from a JSON file, calculate statistics (mean, median, mode) for different classes within the dataset, and then display these statistics in a table. Here's a short explanation of what the code does:
 
