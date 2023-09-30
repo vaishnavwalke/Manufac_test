@@ -1,3 +1,76 @@
+
+
+
+
+**FlavanoidsStatistics. Its main purpose is to load a dataset from a JSON file, calculate statistics (mean, median, mode) for different classes within the dataset, and then display these statistics in a table. Here's a short explanation of what the code does:
+
+It imports the necessary React hooks (useEffect and useState) and styles from external files.
+
+It defines the FlavanoidsStatistics functional component.
+
+Inside the component, it initializes two pieces of state:
+
+dataset: It starts as an empty array and will store the loaded dataset.
+statistics: It starts as an empty object and will store the calculated statistics.
+It uses the useEffect hook to fetch data from a JSON file (/Wine-Data.json) when the component mounts. Once the data is loaded, it calculates statistics for different classes based on the "Alcohol" attribute and stores these statistics in the statistics state.
+
+The calculateStatistics function is used to calculate the mean, median, and mode for each class in the dataset.
+
+The component renders a table with headers for different classes and rows for mean, median, and mode statistics for each class.
+
+The classes variable contains the keys (class labels) for the statistics object.
+
+It maps through the classes to generate the table rows with statistics for each class.
+
+The table is styled using CSS classes defined in the imported stylesheet.
+
+Overall, this code demonstrates how to load and process data in a React component and display the results in a tabular format. It calculates statistical measures for different classes within the dataset and dynamically generates the table based on the available classes.
+
+
+****GammaStatistics. Its purpose is to calculate and display statistical measures (mean, median, mode) for a given dataset grouped by classes and specific data points' attributes. Let's break down what this code does and how you can explain it in an interview:
+
+Imports and Component Definition:
+
+The code imports React and some necessary styles.
+Functional Component:
+
+GammaStatistics is a React functional component that takes a dataset prop as input. This prop is expected to be an array of data points.
+Data Calculation Functions:
+
+calculateGamma(dataPoint): This function calculates a custom statistic called "Gamma" for a single data point based on the values of its attributes (Ash, Hue, Magnesium).
+
+groupDataByClass(): This function groups the dataset by a specific attribute, in this case, "Alcohol." It creates an object where each class (unique Alcohol value) is a key, and the associated values are an array of calculated Gamma values for data points belonging to that class.
+
+calculateMean(data): This function calculates the mean (average) of an array of data.
+
+calculateMedian(data): This function calculates the median (middle value) of an array of data.
+
+calculateMode(data): This function calculates the mode (most frequent value) of an array of data.
+
+Grouping Data:
+
+groupedData is an object that holds the data grouped by class using the groupDataByClass function.
+Calculating Statistics:
+
+classes holds the unique class labels obtained from the grouped data.
+
+statistics is an object that will store statistical measures for each class. It iterates through the classes, calculates the mean, median, and mode for each class's data, and stores these values in the statistics object.
+
+Rendering:
+
+The component returns JSX to render a table. It maps through the classes to generate table headers and cells with statistical values for each class.
+
+The table has three rows: one for Mean, one for Median, and one for Mode.
+
+Styling:
+
+The table is styled using CSS classes defined in an external stylesheet.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
