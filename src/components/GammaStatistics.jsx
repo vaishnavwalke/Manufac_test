@@ -80,19 +80,19 @@ function GammaStatistics({ dataset }) {
         </thead>
         <tbody>
           <tr>
-            <td>Gamma Mean</td>
+            <td id="boldtext">Gamma Mean</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Mean}</td>
             ))}
           </tr>
           <tr>
-            <td>Gamma Median</td>
+            <td id="boldtext">Gamma Median</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Median}</td>
             ))}
           </tr>
           <tr>
-            <td>Gamma Mode</td>
+            <td id="boldtext">Gamma Mode</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Mode}</td>
             ))}

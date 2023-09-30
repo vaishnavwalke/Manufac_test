@@ -90,19 +90,19 @@ const FlavanoidsStatistics = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Flavanoids Mean</td>
+            <td id="boldtext">Flavanoids Mean</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Mean.toFixed(2)}</td>
             ))}
           </tr>
           <tr>
-            <td>Flavanoids Median</td>
+            <td id="boldtext">Flavanoids Median</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Median.toFixed(2)}</td>
             ))}
           </tr>
           <tr>
-            <td>Flavanoids Mode</td>
+            <td id="boldtext">Flavanoids Mode</td>
             {classes.map((cls) => (
               <td key={cls}>{statistics[cls].Mode}</td>
             ))}
