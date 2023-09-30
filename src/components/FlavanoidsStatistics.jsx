@@ -38,16 +38,17 @@ const FlavanoidsStatistics = () => {
   };
 
   const calculateStatistics = (data) => {
-    const classes = [...new Set(data.map((item) => item.Class))];
-    console.log("Classes:", classes); // Debug output
+   // console.log("checking data", data);
+    const classes = [...new Set(data.map((item) => item.Alcohol))];
+    //console.log("Classes:", classes); // Debug output
 
     const statistics = {};
     classes.forEach((cls) => {
       const classData = data
-        .filter((item) => item.Class === cls)
+        .filter((item) => item.Alcohol === cls)
         .map((item) => item.Flavanoids);
 
-      console.log(`Class ${cls} Data:`, classData); // Debug output
+      //console.log(`Class ${cls} Data:`, classData); // Debug output
 
       // Mean calculation
       const mean =

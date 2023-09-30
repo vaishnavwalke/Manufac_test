@@ -8,7 +8,7 @@ function GammaStatistics({ dataset }) {
   const groupDataByClass = () => {
     const groupedData = {};
     dataset.forEach((dataPoint) => {
-      const cls = dataPoint.Class;
+      const cls = dataPoint.Alcohol;
       if (!groupedData[cls]) {
         groupedData[cls] = [];
       }
